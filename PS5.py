@@ -6,7 +6,7 @@ Created on Sun Apr  8 14:12:19 2018
 @author: armandkapllani
 """
 
-__author__ = "Armand Kapllani, UFlorida Economics"
+__author__ = "Armand Kapllani, UF Economics"
 __email__ = "akapllani@ufl.edu"
 
 import collections
@@ -134,5 +134,5 @@ plt.axis('off')
 nx.draw_networkx_nodes(G, pos, node_size=20)
 nx.draw_networkx_edges(G, pos, alpha=0.4)
 
-plt.savefig("degree_histogram.png")
+plt.savefig("degree_histogram.png", dpi=500)
 plt.show()
