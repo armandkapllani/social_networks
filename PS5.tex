@@ -298,7 +298,7 @@ where $l(i,j)$ denotes the number of links in the \textbf{shortest path} between
 \noindent \textbf{{\color{blue} Decay centrality for each vertex}}:
 
 \begin{equation}
-	D_i^\delta(g) = \sum_{j\ne i}\delta^{l(i,j)}
+	D_i^(g) = \sum_{j\ne i}\delta^{l(i,j)}
 \end{equation}
 
 where $l(i,j)$ denotes the number of links in the \textbf{shortest path} between $i$ and $j$. 
@@ -315,7 +315,7 @@ where $l(i,j)$ denotes the number of links in the \textbf{shortest path} between
 		N = 3   &  $5\delta$ &  5/2 \\
 		N = 4   &  $\delta(3+2\delta)$ & 2\\
 		N = 5   &  $\delta(1+4\delta)$ & 3/2 \\
-		N = 6   &  $\delta(1+4\delta)$ & 3/2\\
+		N = 6   &  $\delta(2+3\delta)$ & 7/4\\
 		
 		\bottomrule[1pt]
 	\end{tabular}
