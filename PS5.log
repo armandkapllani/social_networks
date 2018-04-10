@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 APR 2018 22:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 APR 2018 22:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1591,6 +1591,9 @@ LaTeX Warning: Label `fig:M1' multiply defined.
 
 LaTeX Warning: Label `tab:figure' multiply defined.
 
+
+LaTeX Warning: Label `tab:figure' multiply defined.
+
 )
 \openout1 = `PS5.aux'.
 
@@ -1675,7 +1678,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<degree_histogram.png, id=21, 433.62pt x 289.08pt>
+<degree_histogram.png, id=22, 433.62pt x 289.08pt>
 File: degree_histogram.png Graphic file (type png)
  <use degree_histogram.png>
 Package pdftex.def Info: degree_histogram.png used on input line 196.
@@ -1700,7 +1703,7 @@ Overfull \hbox (31.97963pt too wide) in paragraph at lines 407--408
 in-ity as $[][] [] =
  []
 
-[6] [7] <Fig1.png, id=90, 803.0pt x 803.0pt>
+[6] [7] <Fig1.png, id=91, 803.0pt x 803.0pt>
 File: Fig1.png Graphic file (type png)
  <use Fig1.png>
 Package pdftex.def Info: Fig1.png used on input line 493.
@@ -1710,7 +1713,7 @@ Overfull \hbox (56.49902pt too wide) in paragraph at lines 493--494
  [][] 
  []
 
-<Fig2.png, id=91, 803.0pt x 803.0pt>
+<Fig2.png, id=92, 803.0pt x 803.0pt>
 File: Fig2.png Graphic file (type png)
  <use Fig2.png>
 Package pdftex.def Info: Fig2.png used on input line 499.
@@ -1738,7 +1741,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 505.
 Here is how much of TeX's memory you used:
  40733 strings out of 493014
  911945 string characters out of 6133351
- 1063546 words of memory out of 5000000
+ 1063619 words of memory out of 5000000
  43586 multiletter control sequences out of 15000+600000
  13164 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1767,10 +1770,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on PS5.pdf (9 pages, 516510 bytes).
+Output written on PS5.pdf (9 pages, 518899 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 143 compressed objects within 2 object streams
+ 184 PDF objects out of 1000 (max. 8388607)
+ 144 compressed objects within 2 object streams
  41 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
