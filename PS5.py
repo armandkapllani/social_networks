@@ -9,8 +9,10 @@ Created on Sun Apr  8 14:12:19 2018
 __author__ = "Armand Kapllani, UF Economics"
 __email__ = "akapllani@ufl.edu"
 
+import numpy as np
 import collections
 import networkx as nx
+import numpy.linalg as LA
 import matplotlib.pyplot as plt
 
 #------------------------------------#
@@ -100,15 +102,62 @@ w, v = LA.eig(A)
 
 # beta:  captures a base value on each node 
 
-# Katz-Bonacich Centrality  (alpha = 0.5, beta = 1)
-centrality = katz_centrality_numpy(G, 0.5, 1)
+# Katz-Bonacich Centrality  (alpha = 1/6, beta = 1)
+centrality = nx.katz_centrality_numpy(G, 1/6, 1)
 for n,c in sorted(centrality.items()):
     print("%d %0.2f"%(n,c))
     
-# Katz-Bonacich Centrality  (alpha = 0.333, beta = 1)
-centrality = katz_centrality_numpy(G, 1/3, 1)
+ 
+# Katz-Bonacich Centrality  (alpha = 1/8, beta = 1)
+centrality = nx.katz_centrality_numpy(G, 1/8, 1)
 for n,c in sorted(centrality.items()):
     print("%d %0.2f"%(n,c))
+
+
+# Kat-Bonacich Centrality using the formula (alpha = 1, beta = 1/6)
+I = np.ones(36).reshape(6,6)    
+I = np.diag(np.diag(I))    
+ones = np.ones(6).reshape(6,1)
+ 
+# Specify the parameters 
+alpha = 1 
+beta = 1/6
+
+np.matmul(LA.inv(I-beta*A), A.dot(ones))
+
+
+# Kat-Bonacich Centrality using the formula (alpha = 1, beta = 1/8)
+I = np.ones(36).reshape(6,6)    
+I = np.diag(np.diag(I))    
+ones = np.ones(6).reshape(6,1)
+ 
+# Specify the parameters 
+alpha = 1 
+beta = 1/8
+
+np.matmul(LA.inv(I-beta*A), A.dot(ones))
+
+
+
+# Kat-Bonacich Centrality using the formula (alpha = 1, beta = 1/8)
+
+    
+#---------------# 
+# Class example #
+#---------------#
+    
+mat = np.array([0,1,1,1,1,1,0,0,1,0,1,0,0,0,0,1,1,0,0,0,1,0,0,0,0]).reshape(5,5)
+I = np.ones(25).reshape(5,5)    
+I = np.diag(np.diag(I))    
+ones = np.ones(5).reshape(5,1)
+ 
+# Specify the parameters 
+alpha = 1 
+beta = 1/3
+
+np.matmul(LA.inv(I-beta*mat), mat.dot(ones))
+
+#-----------------------------------------------------------------------------#
 
 
 # Degree histogram 

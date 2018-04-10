@@ -406,33 +406,54 @@ C^B(g,a,b) = (I_n - bg)^{-1}ag\textbf{1}_n
 
 where we would expect that the number of walks goes to infinity as $\lim_{k\to\infty} \left\| A^k \right\| = \infty$
 
-\noindent We compute Katz-Bonacich centrality using an algorithmic approach in Python
-
-\begin{equation}
-x_i = \beta \sum_j A_{ij}x_j + \alpha
-\end{equation}
-
-where the parameter $\alpha$ controls the initial centrality and $\beta < \frac{1}{\lambda_{\text{max}}}$. 
-
-
 \begin{table}[ht!]
 	\centering
 	\captionof{table}{Katz-Bonacich centrality} \label{tab:title} 
 	\begin{tabular}{ccc}
 		\hline
 		
-		Vertices & $\alpha = 1$, $\beta = 0.5$ & $\alpha = 1$, $\beta = 1/3$\\
+		Vertices & $\alpha = 1$, $\beta = 1/6$ & $\alpha = 1$, $\beta = 1/3$\\
 		\hline\hline
-		N = 1 & 0.47  &  0.45 \\ 
-		N = 2 & 0.31  & 0.34 \\
-		\textbf{{\color{blue} N = 3}} & \textbf{{\color{blue} 0.60}} &  \textbf{{\color{blue} 0.58}} \\
-		N = 4 & 0.47 & 0.45 \\
-		N = 5 & 0.08 & 0.19 \\
-		N = 6 & 0.31 & 0.34 \\
+		N = 1 & 6.32  &  4.99 \\ 
+		N = 2 & 4.56  & 3.55 \\
+		\textbf{{\color{blue} N = 3}} & \textbf{{\color{blue} 9.05}} &  \textbf{{\color{blue} 7.37}} \\
+		N = 4 & 6.32 & 4.99 \\
+		N = 5 & 2.50 & 1.92 \\
+		N = 6 & 4.56 & 3.55 \\
 		
 		\bottomrule[1pt]
 	\end{tabular}
 \end{table}
+
+\noindent We also compute Katz-Bonacich centrality using an algorithmic approach in Python 
+
+\begin{equation}
+x_i = \beta \sum_j A_{ij}x_j + \alpha
+\end{equation}
+
+where equation $(12)$ is iteratively computed and the parameter $\alpha$ controls the initial centrality and $\beta < \frac{1}{\lambda_{\text{max}}}$. We use NetworkX package and function katz.centrality() and the results are
+
+\begin{table}[ht!]
+	\centering
+	\captionof{table}{Katz-Bonacich centrality using NetworkX in Python} \label{tab:title} 
+	\begin{tabular}{ccc}
+		\hline
+		
+		Vertices & $\alpha = 1/6$, $\beta = 1$ & $\alpha = 1/8$, $\beta = 1$\\
+		\hline\hline
+		N = 1 & 0.43  &  0.42 \\ 
+		N = 2 & 0.37  & 0.38 \\
+		\textbf{{\color{blue} N = 3}} & \textbf{{\color{blue} 0.52}} &  \textbf{{\color{blue} 0.50}} \\
+		N = 4 & 0.43 & 0.42 \\
+		N = 5 & 0.30 & 0.32 \\
+		N = 6 & 0.37 & 0.38 \\
+		
+		\bottomrule[1pt]
+	\end{tabular}
+\end{table}
+
+
+
 
 \vspace{3cm}
 
