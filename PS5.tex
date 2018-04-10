@@ -39,7 +39,7 @@
 \usepackage{shadethm}
 \usepackage{setspace}
 \usetikzlibrary{positioning}
-\usetikzlibrary{calc,matrix}
+
 \newshadetheorem{thm}{Theorem}
 \definecolor{shadethmcolor}{HTML}{EDF8FF}
 \definecolor{shaderulecolor}{HTML}{45CFFF}
@@ -434,8 +434,58 @@ where the parameter $\alpha$ controls the initial centrality and $\beta < \frac{
 	\end{tabular}
 \end{table}
 
+\vspace{3cm}
 
-\section*{Additional scatter plots}
+\section*{Graph Theory}
+
+\noindent\textbf{{\color{blue} Show that if a network is not connected, then its complement is.}}
+
+\begin{proof}
+	Let $G = (V,E)$ be a graph comprising of a set of vertices $V$ and a set of edges $E$. Let $<v_i, v_j>$ denote an edge between two arbitrary vertices $v_i$ and $v_j$ in the graph $G$ where  $<v_i, v_j>$ $\in$ $E$ and let $\tilde{G} = (V,\tilde{E})$ be the complement of the graph $G$. Since $G$ is not a connected graph then we can partition the graph $G$ into two disjoint sets of vertices $V_1$ and $V_2$ where $\forall$ $v_1 \in V_1$ and $\forall$ $v_2 \in V_2$ we have that $<v_1,v_2>$ $\notin E$. Hence for all $v_1\in V_1$ and $v_2\in V_2$ we have that $<v_1, v_2>$ $ \in \tilde{E}$ which implies that $\tilde{G}$ is a connected graph. 
+\end{proof}
+
+
+
+\noindent\textbf{{\color{blue} Provide an example of a four-node network that is connected and its complement is also connected:}}
+
+\begin{figure}[h]
+	\caption{Left: $\big(\big\{1,2,3,4\big\}, g\big)$, right: $\big(\big\{1,2,3,4\big\}, g'\big)$} \label{fig:M1}		
+	\centering
+	\begin{tikzpicture}
+	
+	% Construct the vertices
+	\node[main node](1){$1$};
+	\node[main node](2) [right = 3cm of 1] {$2$};
+	\node[main node](3) [below = 3cm  of 1] {$3$};
+	\node[main node](4) [right = 3cm  of 3] {$4$};
+	
+	% Link the vertices through edges 
+	\path[draw,thick]
+	(1) edge  [red] node {} (2)
+	(2) edge [red] node {} (3)
+	(4) edge [red] node {} (3);
+	
+	\end{tikzpicture}	% NO SPACE HERE
+	\begin{tikzpicture}
+	
+	% Construct the vertices
+	\node[main node](1){$1$};
+	\node[main node](2) [right = 3cm of 1] {$2$};
+	\node[main node](3) [below = 3cm  of 1] {$3$};
+	\node[main node](4) [right = 3cm  of 3] {$4$};
+	
+	% Link the vertices through edges 
+	\path[draw,thick]
+	(1) edge  [red] node {} (3)
+	(2) edge [red] node {} (4)
+	(1) edge [red] node {} (4);
+	\end{tikzpicture}
+	
+\end{figure}		
+
+\vspace{10cm}
+
+\section*{Correlation Scatter Plots}
 
 \begin{figure}[ht!]
 	\centering
@@ -445,9 +495,9 @@ where the parameter $\alpha$ controls the initial centrality and $\beta < \frac{
 
 \begin{figure}[ht!]
 	\centering
-	\captionof{figure}{Scatter plot correlations} \label{tab:figure}
 	\includegraphics[scale=0.5]{Fig2.png}
 \end{figure}
+
 
 
 

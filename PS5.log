@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 APR 2018 10:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 APR 2018 21:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1540,14 +1540,6 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 s/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
-)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibrarymatrix.code.tex
-File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
-)
 \c@shadethm=\count271
 Package hyperref Info: Option `colorlinks' set `true' on input line 63.
 
@@ -1708,49 +1700,49 @@ Overfull \hbox (31.97963pt too wide) in paragraph at lines 407--408
 in-ity as $[][] [] =
  []
 
-<Fig1.png, id=72, 803.0pt x 803.0pt>
+[6] [7] <Fig1.png, id=90, 803.0pt x 803.0pt>
 File: Fig1.png Graphic file (type png)
  <use Fig1.png>
-Package pdftex.def Info: Fig1.png used on input line 443.
+Package pdftex.def Info: Fig1.png used on input line 493.
 (pdftex.def)             Requested size: 401.49902pt x 401.49902pt.
 
-Overfull \hbox (56.49902pt too wide) in paragraph at lines 443--444
+Overfull \hbox (56.49902pt too wide) in paragraph at lines 493--494
  [][] 
  []
 
-<Fig2.png, id=73, 803.0pt x 803.0pt>
+<Fig2.png, id=91, 803.0pt x 803.0pt>
 File: Fig2.png Graphic file (type png)
  <use Fig2.png>
-Package pdftex.def Info: Fig2.png used on input line 449.
+Package pdftex.def Info: Fig2.png used on input line 498.
 (pdftex.def)             Requested size: 401.49902pt x 401.49902pt.
 
-Overfull \hbox (56.49902pt too wide) in paragraph at lines 449--450
+Overfull \hbox (56.49902pt too wide) in paragraph at lines 498--499
  [][] 
  []
 
-[6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 454.
- [7 <./Fig1.png>] [8 <./Fig2.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 454.
+[8 <./Fig1.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 504.
+ [9 <./Fig2.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 504.
  (./PS5.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 454.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 454.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 504.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 504.
 Package rerunfilecheck Info: File `PS5.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 454.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 504.
  ) 
 Here is how much of TeX's memory you used:
- 40844 strings out of 493014
- 915089 string characters out of 6133351
- 1067181 words of memory out of 5000000
- 43695 multiletter control sequences out of 15000+600000
- 12818 words of font info for 49 fonts, out of 8000000 for 9000
+ 40733 strings out of 493014
+ 911945 string characters out of 6133351
+ 1063535 words of memory out of 5000000
+ 43586 multiletter control sequences out of 15000+600000
+ 13164 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,15n,84p,10411b,818s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,15n,84p,10411b,821s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1773,11 +1765,12 @@ ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on PS5.pdf (8 pages, 502740 bytes).
+-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on PS5.pdf (9 pages, 516435 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
+ 183 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
